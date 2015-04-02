@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="//use.edgefonts.net/vera-sans.js"></script>
+  <title>Shorter.cf - Shorten your URLs!</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript">function viewTOS() { document.getElementById("overlay").style.display = "block"; }</script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <a href="http://shorter.cf" target="_self" class="nounderline">
+  <header>
+    <div id="banner"><div id="maincolor">Shorter</div><div id="subcolor">.cf</div></div>
+    <div id="description">Make your long URLs a lot shorter!</div>
+  </header>
+  </a>
+  <main>
+    <div id="mainform">
+      <form name="urlform" action="short-url.php" method="POST">
+	<div id="wrapperurl">
+	  <input type="url" name="url" required placeholder="e.g. www.google.com" autocomplete="off">
+	</div>
+	<div id="wrappersubmit">
+	  <input type="submit" value="Shorten">
+	</div>
+      </form>
+      	<div id="hint"> 
+	  1. Copy & paste your long URL into the form above
+	  <br>
+	  2. Click "Shorten" 
+	  <br>
+	  3. A short and handy URL will be created for you!
+	</div>
+    </div>
+    <div id="wrapperwarnings">
+      <div id="warning">This is a warning</div>
+    </div>
+    <div id="ad1" class="ads"> </div>
+    <div id="ad2" class="ads"> </div>
+  </main>
+  <!-- Placeholder for recent URLs -->
+  <div id="recent-urls-wrapper"> <br> </div>
+  <div id="space"> </div>
+  <!--<div id="info-box">-->
+  <div id="overlay">
+    <div id="terms-of-service">
+      <div class="caption">TERMS OF SERVICE</div>
+      <p>1. You may not use Shorter.cf for illegal activities. You are not allowed to hide URLs to malicious websites by using the Shorter.cf URL-Service. </p>
+      <p>2. The administartor of Shorter.cf reserves the right to delete any link at any point in time, even without strong suspicion.</p>
+      <p>3. By attacking or abusing the Shorter.cf-Service you are making yourself guilty of an offence. Local laws apply. </p>
+      <p>4. The administrator of this website is not responsible for any user-posted content.</p>
+    </div>
+  </div>
+  <!-- </div>-->
+</div>
+  <footer>
+    By using the service <a href="http://shorter.cf">Shorter.cf</a> you are agreeing to our <div id="terms" onclick="viewTOS()">Terms of Service</div>
+  </footer>
+</body>
+</html>
